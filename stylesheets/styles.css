@@ -1,17 +1,31 @@
 /* line 1, ../sass/styles.scss */
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 5, ../sass/styles.scss */
 .flip {
   -webkit-perspective: 800;
-  width: 70%;
+  width: 25%;
+  height: auto;
   position: relative;
-  margin: 50px auto;
+  display: inline-block;
+  float: left;
 }
-/* line 6, ../sass/styles.scss */
+/* line 12, ../sass/styles.scss */
+.flip img {
+  width: 100%;
+  height: auto;
+  display: inherit;
+}
+/* line 17, ../sass/styles.scss */
 .flip .card {
-  height: 100%;
+  height: auto;
   -webkit-transform-style: preserve-3d;
-  -webkit-transition: 0.5s;
+  -webkit-transition: 0.4s;
 }
-/* line 10, ../sass/styles.scss */
+/* line 21, ../sass/styles.scss */
 .flip .card .face {
   width: 100%;
   position: absolute;
@@ -22,19 +36,29 @@
   text-align: center;
   cursor: pointer;
 }
-/* line 20, ../sass/styles.scss */
+/* line 31, ../sass/styles.scss */
 .flip .card .front {
   z-index: 1;
   background: black;
   color: white;
 }
-/* line 25, ../sass/styles.scss */
+/* line 36, ../sass/styles.scss */
 .flip .card .back {
-  -webkit-transform: rotatex(-180deg);
-  background: white;
-  color: black;
+  -webkit-transform: rotatey(-180deg);
+  background: #009597;
+  color: #fff;
 }
-/* line 30, ../sass/styles.scss */
+/* line 40, ../sass/styles.scss */
+.flip .card .back img {
+  visibility: hidden;
+}
+/* line 43, ../sass/styles.scss */
+.flip .card .back .back-details {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+/* line 49, ../sass/styles.scss */
 .flip .card.flipped {
-  -webkit-transform: rotatex(-180deg);
+  -webkit-transform: rotatey(-180deg);
 }
