@@ -3,17 +3,23 @@ html, body {
   margin: 0;
   padding: 0;
   font-family: 'Lato', sans-serif;
+  color: #fff;
+  font-weight: 300;
 }
 
-/* line 6, ../sass/styles.scss */
+/* line 8, ../sass/styles.scss */
 h4 {
-  color: #fff;
   font-size: 24px;
   line-height: 30px;
   font-weight: 300;
 }
 
-/* line 12, ../sass/styles.scss */
+/* line 13, ../sass/styles.scss */
+strong {
+  font-weight: 600;
+}
+
+/* line 16, ../sass/styles.scss */
 .flip {
   -webkit-perspective: 800;
   width: 25%;
@@ -22,50 +28,58 @@ h4 {
   display: inline-block;
   float: left;
 }
-/* line 19, ../sass/styles.scss */
+/* line 23, ../sass/styles.scss */
 .flip img {
   width: 100%;
   height: auto;
   display: inherit;
 }
-/* line 24, ../sass/styles.scss */
+/* line 28, ../sass/styles.scss */
 .flip .card {
   height: auto;
   -webkit-transform-style: preserve-3d;
   -webkit-transition: 0.4s;
 }
-/* line 28, ../sass/styles.scss */
+/* line 32, ../sass/styles.scss */
 .flip .card .face {
   width: 100%;
   position: absolute;
   -webkit-backface-visibility: hidden;
   z-index: 2;
-  text-align: center;
   cursor: pointer;
 }
-/* line 36, ../sass/styles.scss */
+/* line 39, ../sass/styles.scss */
 .flip .card .front {
   z-index: 1;
-  background: black;
   color: white;
 }
-/* line 41, ../sass/styles.scss */
+/* line 43, ../sass/styles.scss */
 .flip .card .back {
   -webkit-transform: rotatey(-180deg);
   background: #009597;
-  color: #fff;
 }
-/* line 45, ../sass/styles.scss */
+/* line 46, ../sass/styles.scss */
 .flip .card .back img {
   visibility: hidden;
 }
-/* line 48, ../sass/styles.scss */
+/* line 49, ../sass/styles.scss */
 .flip .card .back .back-details {
   position: absolute;
   top: 0;
-  left: 5px;
+  left: 10px;
 }
-/* line 54, ../sass/styles.scss */
+/* line 55, ../sass/styles.scss */
 .flip .card.flipped {
   -webkit-transform: rotatey(-180deg);
+}
+
+/* line 60, ../sass/styles.scss */
+.details-row {
+  display: inline-block;
+  width: 100%;
+}
+/* line 64, ../sass/styles.scss */
+.details-row.details-row-1 span {
+  width: 115px;
+  display: inline-block;
 }

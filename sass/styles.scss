@@ -2,12 +2,16 @@ html, body {
   margin: 0;
   padding: 0;
   font-family: 'Lato', sans-serif;
+  color: #fff;
+  font-weight: 300;
 }
 h4 {
-  color: #fff;
   font-size: 24px;
   line-height: 30px;
   font-weight: 300;
+}
+strong {
+  font-weight: 600;
 }
 .flip {
   -webkit-perspective: 800;
@@ -30,29 +34,36 @@ h4 {
         position: absolute;
         -webkit-backface-visibility: hidden;
         z-index: 2;
-        text-align: center;
         cursor: pointer;  
       }
       .front {
         z-index: 1;
-        background: black;
         color: white;
       }
       .back {
         -webkit-transform: rotatey(-180deg);
         background: #009597;
-        color: #fff;
         img {
           visibility: hidden;
         }
         .back-details {
           position: absolute;
           top: 0;
-          left: 5px;
+          left: 10px;
         }
       }
     &.flipped {
       -webkit-transform: rotatey(-180deg);   
+    }
+  }
+}
+.details-row {
+  display: inline-block;
+  width: 100%;
+  &.details-row-1 {
+    span {
+      width: 115px;
+      display: inline-block;
     }
   }
 }
