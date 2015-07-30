@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box;
+}
 html, body {
   margin: 0;
   padding: 0;
@@ -75,6 +78,25 @@ strong {
     }
     .beds, .baths {
       width: 75px;
+    }
+  }
+}
+.bottom-bar {
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: right;
+  padding: 14px 10px;
+  background-color: #217079;
+  a {
+    font-family: 'Arapey', serif;
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
     }
   }
 }

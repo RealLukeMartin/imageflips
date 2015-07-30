@@ -1,4 +1,9 @@
 /* line 1, ../sass/styles.scss */
+* {
+  box-sizing: border-box;
+}
+
+/* line 4, ../sass/styles.scss */
 html, body {
   margin: 0;
   padding: 0;
@@ -7,19 +12,19 @@ html, body {
   font-weight: 300;
 }
 
-/* line 8, ../sass/styles.scss */
+/* line 11, ../sass/styles.scss */
 h4 {
   font-size: 24px;
   line-height: 30px;
   font-weight: 300;
 }
 
-/* line 13, ../sass/styles.scss */
+/* line 16, ../sass/styles.scss */
 strong {
   font-weight: 600;
 }
 
-/* line 16, ../sass/styles.scss */
+/* line 19, ../sass/styles.scss */
 .flip {
   -webkit-perspective: 800;
   width: 25%;
@@ -28,19 +33,19 @@ strong {
   display: inline-block;
   float: left;
 }
-/* line 23, ../sass/styles.scss */
+/* line 26, ../sass/styles.scss */
 .flip img {
   width: 100%;
   height: auto;
   display: inherit;
 }
-/* line 28, ../sass/styles.scss */
+/* line 31, ../sass/styles.scss */
 .flip .card {
   height: auto;
   -webkit-transform-style: preserve-3d;
   -webkit-transition: 0.4s;
 }
-/* line 32, ../sass/styles.scss */
+/* line 35, ../sass/styles.scss */
 .flip .card .face {
   width: 100%;
   position: absolute;
@@ -48,50 +53,73 @@ strong {
   z-index: 2;
   cursor: pointer;
 }
-/* line 39, ../sass/styles.scss */
+/* line 42, ../sass/styles.scss */
 .flip .card .front {
   z-index: 1;
   color: white;
 }
-/* line 43, ../sass/styles.scss */
+/* line 46, ../sass/styles.scss */
 .flip .card .back {
   -webkit-transform: rotatey(-180deg);
   background: #009597;
 }
-/* line 46, ../sass/styles.scss */
+/* line 49, ../sass/styles.scss */
 .flip .card .back img {
   visibility: hidden;
 }
-/* line 49, ../sass/styles.scss */
+/* line 52, ../sass/styles.scss */
 .flip .card .back .back-details {
   position: absolute;
   top: 0;
   left: 10px;
 }
-/* line 55, ../sass/styles.scss */
+/* line 58, ../sass/styles.scss */
 .flip .card.flipped {
   -webkit-transform: rotatey(-180deg);
 }
 
-/* line 60, ../sass/styles.scss */
+/* line 63, ../sass/styles.scss */
 .details-row {
   display: inline-block;
   width: 100%;
   margin: 5px 0;
 }
-/* line 64, ../sass/styles.scss */
+/* line 67, ../sass/styles.scss */
 .details-row span {
   display: inline-block;
 }
-/* line 68, ../sass/styles.scss */
+/* line 71, ../sass/styles.scss */
 .details-row.details-row-1 span {
   width: 115px;
 }
-/* line 73, ../sass/styles.scss */
+/* line 76, ../sass/styles.scss */
 .details-row.details-row-2 .sqft {
   width: 115px;
 }
-/* line 76, ../sass/styles.scss */
+/* line 79, ../sass/styles.scss */
 .details-row.details-row-2 .beds, .details-row.details-row-2 .baths {
   width: 75px;
+}
+
+/* line 84, ../sass/styles.scss */
+.bottom-bar {
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: right;
+  padding: 14px 10px;
+  background-color: #217079;
+}
+/* line 93, ../sass/styles.scss */
+.bottom-bar a {
+  font-family: 'Arapey', serif;
+  font-size: 20px;
+  color: #fff;
+  text-decoration: none;
+}
+/* line 98, ../sass/styles.scss */
+.bottom-bar a:hover {
+  text-decoration: underline;
 }
