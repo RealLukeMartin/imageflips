@@ -60,10 +60,21 @@ strong {
 .details-row {
   display: inline-block;
   width: 100%;
+  margin: 5px 0;
+  span {
+    display: inline-block;
+  }
   &.details-row-1 {
     span {
       width: 115px;
-      display: inline-block;
+    }
+  }
+  &.details-row-2 {
+    .sqft {
+      width: 115px;
+    }
+    .beds, .baths {
+      width: 75px;
     }
   }
 }
