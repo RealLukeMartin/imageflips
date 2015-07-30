@@ -6,11 +6,9 @@ $(document).ready( function() {
 	});
 	heightWidthSync();
 });
-
 $(window).on('resize', function() {
 	heightWidthSync();
 });
-
 function heightWidthSync() {
 	var frontHeight = $('.front').outerHeight();
 	var backHeight = $('.back').outerHeight();
