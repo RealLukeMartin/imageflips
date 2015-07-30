@@ -1,6 +1,13 @@
 html, body {
   margin: 0;
   padding: 0;
+  font-family: 'Lato', sans-serif;
+}
+h4 {
+  color: #fff;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 300;
 }
 .flip {
   -webkit-perspective: 800;
@@ -23,10 +30,8 @@ html, body {
         position: absolute;
         -webkit-backface-visibility: hidden;
         z-index: 2;
-        font-family: Georgia;
-        font-size: 3em;
         text-align: center;
-        cursor: pointer;       
+        cursor: pointer;  
       }
       .front {
         z-index: 1;
@@ -43,7 +48,7 @@ html, body {
         .back-details {
           position: absolute;
           top: 0;
-          left: 0;
+          left: 5px;
         }
       }
     &.flipped {
