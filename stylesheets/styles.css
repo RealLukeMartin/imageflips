@@ -79,29 +79,36 @@ strong {
 }
 
 /* line 63, ../sass/styles.scss */
+.front-details {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+/* line 68, ../sass/styles.scss */
 .details-row {
   display: inline-block;
   width: 100%;
   margin: 5px 0;
 }
-/* line 67, ../sass/styles.scss */
+/* line 72, ../sass/styles.scss */
 .details-row span {
   display: inline-block;
 }
-/* line 71, ../sass/styles.scss */
+/* line 76, ../sass/styles.scss */
 .details-row.details-row-1 span {
   width: 115px;
 }
-/* line 76, ../sass/styles.scss */
+/* line 81, ../sass/styles.scss */
 .details-row.details-row-2 .sqft {
   width: 115px;
 }
-/* line 79, ../sass/styles.scss */
+/* line 84, ../sass/styles.scss */
 .details-row.details-row-2 .beds, .details-row.details-row-2 .baths {
   width: 75px;
 }
 
-/* line 84, ../sass/styles.scss */
+/* line 89, ../sass/styles.scss */
 .bottom-bar {
   display: inline-block;
   position: absolute;
@@ -112,14 +119,14 @@ strong {
   padding: 14px 10px;
   background-color: #217079;
 }
-/* line 93, ../sass/styles.scss */
+/* line 98, ../sass/styles.scss */
 .bottom-bar a {
   font-family: 'Arapey', serif;
   font-size: 20px;
   color: #fff;
   text-decoration: none;
 }
-/* line 98, ../sass/styles.scss */
+/* line 103, ../sass/styles.scss */
 .bottom-bar a:hover {
   text-decoration: underline;
 }
