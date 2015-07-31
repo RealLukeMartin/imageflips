@@ -83,32 +83,48 @@ strong {
   position: absolute;
   bottom: 0;
   left: 0;
+  width: 100%;
+}
+/* line 68, ../sass/styles.scss */
+.front-details h4 {
+  margin-bottom: 5px;
+}
+/* line 71, ../sass/styles.scss */
+.front-details .front-icons {
+  display: inline-block;
+}
+/* line 73, ../sass/styles.scss */
+.front-details .front-icons img {
+  display: inline-block;
+  width: 24px;
+  height: 14px;
+  margin-right: 10px;
 }
 
-/* line 68, ../sass/styles.scss */
+/* line 81, ../sass/styles.scss */
 .details-row {
   display: inline-block;
   width: 100%;
   margin: 5px 0;
 }
-/* line 72, ../sass/styles.scss */
+/* line 85, ../sass/styles.scss */
 .details-row span {
   display: inline-block;
 }
-/* line 76, ../sass/styles.scss */
+/* line 89, ../sass/styles.scss */
 .details-row.details-row-1 span {
   width: 115px;
 }
-/* line 81, ../sass/styles.scss */
+/* line 94, ../sass/styles.scss */
 .details-row.details-row-2 .sqft {
   width: 115px;
 }
-/* line 84, ../sass/styles.scss */
+/* line 97, ../sass/styles.scss */
 .details-row.details-row-2 .beds, .details-row.details-row-2 .baths {
   width: 75px;
 }
 
-/* line 89, ../sass/styles.scss */
+/* line 102, ../sass/styles.scss */
 .bottom-bar {
   display: inline-block;
   position: absolute;
@@ -119,14 +135,14 @@ strong {
   padding: 14px 10px;
   background-color: #217079;
 }
-/* line 98, ../sass/styles.scss */
+/* line 111, ../sass/styles.scss */
 .bottom-bar a {
   font-family: 'Arapey', serif;
   font-size: 20px;
   color: #fff;
   text-decoration: none;
 }
-/* line 103, ../sass/styles.scss */
+/* line 116, ../sass/styles.scss */
 .bottom-bar a:hover {
   text-decoration: underline;
 }
